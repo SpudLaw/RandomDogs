@@ -11,11 +11,6 @@ class RandomDogAPI {
     
     let urlSession: URLSession = URLSession(configuration: .default)
     
-    
-    init() {
-        
-    }
-    
     func randomDog(callback: @escaping (String) -> ()) {
         
         guard let url = URL(string: "https://dog.ceo/api/breeds/image/random") else {
@@ -46,5 +41,18 @@ class RandomDogAPI {
         datatask.resume()
         
     }
+ 
     
+    func fetchRandomDog() async throws -> String {
+        
+        guard let url = URL(string: "https://dog.ceo/api/breeds/image/random") else {
+            print("There was a problem getting the api url")
+            return ""
+        }
+        
+        let urlRequest = URLRequest(url: url)
+        let (data, _) = try await urlSession.data(for: urlRequest)
+        let randomDog = try? JSONDecoder().decode(RandomDogDataModel.self, from: data)
+        return randomDog?.message ?? ""
+    }
 }

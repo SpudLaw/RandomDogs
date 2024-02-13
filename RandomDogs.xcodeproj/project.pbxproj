@@ -18,6 +18,7 @@
 		225C93292814CC660073111D /* RandomDogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C93282814CC660073111D /* RandomDogsUITestsLaunchTests.swift */; };
 		225C93362814CDF40073111D /* RandomDogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C93352814CDF40073111D /* RandomDogAPI.swift */; };
 		225C93382814CF050073111D /* RandomDogDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225C93372814CF050073111D /* RandomDogDataModel.swift */; };
+		D144C8EC2B7A82B000533E99 /* DogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D144C8EB2B7A82B000533E99 /* DogViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		225C93282814CC660073111D /* RandomDogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		225C93352814CDF40073111D /* RandomDogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogAPI.swift; sourceTree = "<group>"; };
 		225C93372814CF050073111D /* RandomDogDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogDataModel.swift; sourceTree = "<group>"; };
+		D144C8EB2B7A82B000533E99 /* DogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		225C93042814CC640073111D /* RandomDogs */ = {
 			isa = PBXGroup;
 			children = (
+				D144C8ED2B7BF9C700533E99 /* data */,
 				225C93052814CC640073111D /* AppDelegate.swift */,
 				225C93072814CC640073111D /* SceneDelegate.swift */,
 				225C93092814CC640073111D /* ViewController.swift */,
@@ -112,6 +115,7 @@
 				225C93132814CC660073111D /* Info.plist */,
 				225C93352814CDF40073111D /* RandomDogAPI.swift */,
 				225C93372814CF050073111D /* RandomDogDataModel.swift */,
+				D144C8EB2B7A82B000533E99 /* DogViewModel.swift */,
 			);
 			path = RandomDogs;
 			sourceTree = "<group>";
@@ -131,6 +135,13 @@
 				225C93282814CC660073111D /* RandomDogsUITestsLaunchTests.swift */,
 			);
 			path = RandomDogsUITests;
+			sourceTree = "<group>";
+		};
+		D144C8ED2B7BF9C700533E99 /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				225C930A2814CC640073111D /* ViewController.swift in Sources */,
 				225C93062814CC640073111D /* AppDelegate.swift in Sources */,
 				225C93362814CDF40073111D /* RandomDogAPI.swift in Sources */,
+				D144C8EC2B7A82B000533E99 /* DogViewModel.swift in Sources */,
 				225C93082814CC640073111D /* SceneDelegate.swift in Sources */,
 				225C93382814CF050073111D /* RandomDogDataModel.swift in Sources */,
 			);
@@ -445,6 +457,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Z364J6Y7U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RandomDogs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -472,6 +485,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Z364J6Y7U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RandomDogs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
